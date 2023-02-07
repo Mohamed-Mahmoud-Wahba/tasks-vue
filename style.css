@@ -1,0 +1,208 @@
+::selection{
+color: #ff0077;
+background-color: #4fc08d
+}
+body{
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+}
+header{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #4fc08d;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    max-width: 40rem;
+}
+#events{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+    width: 90%;
+    max-width: 40rem;
+}
+#events h2{
+    font-size: 2rem;
+    border-bottom: 4px solid #ccc;
+    color:#4fc08d;
+    margin: 0 0 1rem 0;
+}
+#events p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 1px solid #4fc08d;
+    background-color: #4fc08d;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 25px;
+     
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+#events input {
+    font: inherit;
+    border: 1px solid #ccc;
+}
+#events input:focus{
+    outline: none;
+    border-color: #4fc08d;
+    background-color: #d7fdeb;
+}
+#events button {
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 50px;
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #ff0077;
+    background-color: #ff0077;
+    color: #fff;
+    padding: 8px 20px 8px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+#events button:hover,
+#events button:active{
+    background-color: #ff0077;
+    border-color: #ff0077;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+#Styling{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+    width: 90%;
+    max-width: 40rem;
+}
+.demo{
+    border: 2px dashed #ccc;
+    height: 100px;
+    margin: 16px;
+    width: calc(100% - 32px);
+}
+
+.active{
+    border-color: red;
+    background-color: salmon;
+}
+#Styling button {
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 50px;
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #ff0077;
+    background-color: #ff0077;
+    color: #fff;
+    padding: 8px 20px 8px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+#Styling button:hover,
+#Styling button:active{
+    background-color: #ff0077;
+    border-color: #ff0077;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+#user-goals{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+    width: 90%;
+    max-width: 40rem;
+}
+
+#user-goals h2{
+    font-size: 2rem;
+    border-bottom: 4px solid #ccc;
+    color: green;
+    margin: 0 0 1rem 0;
+}
+#user-goals p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+    padding: 0.5rem;
+
+     
+}
+#user-goals button {
+ 
+    margin-top: 15px;
+margin-left: -10px;
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #ff0077;
+    background-color: #ff0077;
+    color: #fff;
+    padding: 1px 20px 2px 20px;
+
+}
+#user-goals button:hover,
+#user-goals button:active{
+    background-color: #ff0077;
+    border-color: #ff0077;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+#user-goals input {
+    font: inherit;
+    border: 1px solid #ccc;
+}
+#user-goals input:focus{
+    outline: none;
+    border-color: #4fc08d;
+    background-color: #d7fdeb;
+}
+li{
+    list-style: none;
+    font-weight: bold;
+    color: #000;
+     font-size: 25px;
+     background-color: #4fc08d;
+    padding: 10px 20px 36px 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+ul{
+    justify-content: center;
+    display: grid;
+}
+.button{
+margin-left: 20px!important;
+    margin-top: 40px !important;
+    font: inherit !important;
+    cursor: pointer !important;
+    border: 1px solid #ff0077 !important;
+    background-color: #ff0077 !important;
+    color: #fff !important;
+    border-radius: 50px;
+    padding: 1px 20px 2px 20px !important;
+    padding: 8px 20px 8px 20px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26) !important;
+}
+
+
+.buttom{
+    margin-left: 20px!important;
+    margin-top: 28px !important;
+    font: inherit !important;
+    cursor: pointer !important;
+    border: 1px solid #4fc08d !important;
+    background-color: #4fc08d !important;
+    color: #fff !important;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 26%) !important;
+    font-weight: bold !important;
+    }

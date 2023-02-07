@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Monster Slayer</h1> 
+    </header>
+    <div id="game">
+
+ 
+    <section id="monster" class="container">
+        <h2>Monster Health</h2>
+        <div class="healthbar">
+            <div class="healthbar_value" :style="monsterBarStyle"></div>
+        </div>
+    </section>
+    <section id="player" class="container">
+       <h2>Your Health</h2>
+       <div class="healthbar">
+        <div class="healthbar_value" :style="playerBarStyle"></div>
+       </div>
+</section>
+<section class="container" v-if="winner">
+    <h2>Game Over!</h2>
+   <h3 v-if="winner === 'monster'">You Lost!</h3>
+   <h3 v-else-if="winner === 'player'">You won!</h3>
+   <h3 v-else  >It's a draw!</h3>
+   <button @click="startGame">Start New Game</button>
+</section>
+<section id="controls"  v-else>
+  <button @click="attackMonster">ATTACK</button>
+  <button :disabled="mayUseSpecailAttack" @click="specialAttackMonster  ">SPECIAL ATTACK</button>
+  <button @click="healPlayer">HEAL</button>
+  <button @click="Surrender">SURRENDER</button>
+</section>
+<section id="log"  class="container">
+    <h2>Battle Log</h2>
+    <ul>
+        <li v-for="logMessage in logMessages">
+            <span :class="{'log--player': logMessage.actionBy === 'player', 'log--monster': logMessage.actionBy === 'monster'}">{{ logMessage.actionBy === 'player' ? 'player' : 'Monster' }}</span>
+            <span v-if="logMessage.actionType === 'heal'">heals himself for <span class="log--heal">{{ logMessage.actionValue }}</span></span>
+            <span v-else>attackes and deals <span class="log--damage">{{ logMessage.actionValue }}</span></span>
+
+        </li>
+    </ul>
+    <button class="button">
+        <a href="./blog.html">Go To back (blog)</a>
+      </button>
+      <button class="button">
+        <a href="./app.html">Go To App Page</a>
+      </button>
+</section>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./html.js"></script>
+</body>
+</html>
